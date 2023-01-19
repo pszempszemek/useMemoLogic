@@ -5,7 +5,6 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const calculation = expensiveCalculation(count);
 
-  
   const increment = () => {
     setCount((c) => c+1);
   }

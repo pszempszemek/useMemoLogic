@@ -5,14 +5,6 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const calculation = expensiveCalculation(count);
 
-
-  const expensiveCalculation = (num) => {
-    console.log('Calculating');
-    for (let i =0; i<100000000; i++) {
-      num +=1;
-    }
-    return num;
-  };
   
   const increment = () => {
     setCount((c) => c+1);
@@ -41,3 +33,11 @@ export default function App() {
       </main>
   );
 }
+
+const expensiveCalculation = (num) => {
+  console.log('Calculating');
+  for (let i =0; i<100000000; i++) {
+    num +=1;
+  }
+  return num;
+};
